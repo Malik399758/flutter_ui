@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:smit_ui_widget/ui_task/page_navigation_ui_task7/page1.dart';
-import 'package:smit_ui_widget/ui_task/page_navigation_ui_task7/page2.dart';
-import 'package:smit_ui_widget/ui_task/page_navigation_ui_task7/page3.dart';
+import 'package:smit_ui_widget/ui_task/login_register/login_register.dart';
+import 'package:smit_ui_widget/ui_task/security_guard_ui/ui_task17.dart';
+import 'package:smit_ui_widget/ui_task/shirts_ui/shirt_screen1.dart';
+import 'package:smit_ui_widget/ui_task/shirts_ui/shirt_screen2.dart';
+import 'package:smit_ui_widget/ui_task/shirts_ui/shirt_screen3.dart';
 import 'package:smit_ui_widget/ui_task/ui_task1.dart';
-import 'package:smit_ui_widget/ui_task/ui_task2.dart';
-import 'package:smit_ui_widget/ui_task/ui_task3.dart';
-import 'package:smit_ui_widget/ui_task/ui_task4.dart';
-import 'package:smit_ui_widget/ui_task/ui_task5.dart';
-import 'package:smit_ui_widget/ui_task/ui_task6.dart';
-import 'package:smit_ui_widget/ui_task/ui_task8.dart';
-import 'package:smit_ui_widget/ui_task/ui_task9.dart';
+import 'package:smit_ui_widget/ui_task/ui_task11.dart';
+import 'package:smit_ui_widget/ui_task/ui_task15.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: UiTask1(),
+      home: ShirtScreen1(),
     );
   }
 }
@@ -58,20 +56,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
+
     return Scaffold(
       appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
       body: Center(
