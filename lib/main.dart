@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:smit_ui_widget/ui_task/english_talk_app/home_screen.dart';
+import 'package:smit_ui_widget/ui_task/english_talk_app/splash_screen.dart';
+import 'package:smit_ui_widget/ui_task/facebook_clone/facebook_home_screen.dart';
 import 'package:smit_ui_widget/ui_task/login_register/login_register.dart';
 import 'package:smit_ui_widget/ui_task/security_guard_ui/ui_task17.dart';
 import 'package:smit_ui_widget/ui_task/shirts_ui/shirt_screen1.dart';
 import 'package:smit_ui_widget/ui_task/shirts_ui/shirt_screen2.dart';
 import 'package:smit_ui_widget/ui_task/shirts_ui/shirt_screen3.dart';
+import 'package:smit_ui_widget/ui_task/stack/stack_task1.dart';
+import 'package:smit_ui_widget/ui_task/stack/stack_task2.dart';
+import 'package:smit_ui_widget/ui_task/tab_bar/tab_bar_task2.dart';
+import 'package:smit_ui_widget/ui_task/tab_bar/tabbar_task1.dart';
+import 'package:smit_ui_widget/ui_task/tab_bar/weight_tracker.dart';
 import 'package:smit_ui_widget/ui_task/ui_task1.dart';
 import 'package:smit_ui_widget/ui_task/ui_task11.dart';
 import 'package:smit_ui_widget/ui_task/ui_task15.dart';
@@ -26,7 +34,16 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ShirtScreen1(),
+      darkTheme: ThemeData(
+        textTheme: TextTheme(
+          headlineLarge: TextStyle(color: Colors.white),
+          displaySmall: TextStyle(fontSize: 17,color: Colors.white)
+        ),
+        scaffoldBackgroundColor: Colors.black
+      ),
+      themeMode: ThemeMode.light,
+      home:SplashScreen()
+      // HomeScreenEnglish()
     );
   }
 }
