@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:smit_ui_widget/ui_task/advance_ui_task/ad_splash_screen.dart';
+import 'package:smit_ui_widget/ui_task/advance_ui_task/ad_ui_screen1.dart';
+import 'package:smit_ui_widget/ui_task/advance_ui_task/ad_ui_screen2.dart';
+import 'package:smit_ui_widget/ui_task/advance_ui_task/ad_ui_screen3.dart';
 import 'package:smit_ui_widget/ui_task/english_talk_app/home_screen.dart';
 import 'package:smit_ui_widget/ui_task/english_talk_app/splash_screen.dart';
 import 'package:smit_ui_widget/ui_task/facebook_clone/facebook_home_screen.dart';
@@ -42,7 +46,8 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.black
       ),
       themeMode: ThemeMode.light,
-      home:SplashScreen()
+      home:AdSplashScreen()
+      //SplashScreen()
       // HomeScreenEnglish()
     );
   }
